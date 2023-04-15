@@ -1,0 +1,16 @@
+[
+    {
+        "driver": "chrome",
+        "url": "https://www.google.com.tw/",
+        "init": {},
+        "request": {},
+        "test": {}
+    },
+    {
+        "driver": "safari",
+        "url": "https://www.google.com.tw/",
+        "init": {},
+        "request": {},
+        "test": {}
+    }
+]
