@@ -3,7 +3,11 @@
         "driver": "chrome",
         "url": "https://www.google.com.tw/",
         "init": {},
-        "request": {},
-        "test": {}
+        "request": {
+            "search_text":"Facebook"
+        },
+        "test": {
+            "result_text":"Facebook - 登入或註冊"
+        }
     }
 ]
