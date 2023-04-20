@@ -4,7 +4,7 @@ from logging import Logger
 
 
 def screenshot(driver, msg=""):
-    now = datetime.now(format="%H:%M:%S")
+    now = datetime.now().strftime("%H:%M:%S")
     file_name = f"{msg}_{now}.png"
     screenshot_dir = "../screenshots/"
     current_dir = os.path.dirname(__file__)
