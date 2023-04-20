@@ -29,4 +29,5 @@ class TestClass:
         assert res.text == test_data['result_text']
         # step 2: select result
         res = search_result_page.click_search_result(test_data['result_text'])
+        # test
         assert login_page.is_exist(res)
