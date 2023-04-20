@@ -20,6 +20,7 @@ class TestClass:
         # init driver and pages
         driver = chrome_driver
         driver.get(data['url'])
+        # TODO: enhancement init class
         home_page, search_result_page, login_page = HomePage(driver), SearchResultPage(driver), LoginPage(driver)
         # step 1: google text
         home_page.search_text(request_data['search_text'])
