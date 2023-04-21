@@ -1,5 +1,4 @@
 import json
-from time import sleep
 
 import pytest
 from page.facebook.login_page import LoginPage
@@ -29,6 +28,6 @@ class TestClass:
         # test
         assert res.text == test_data['result_text']
         # step 2: select result
-        res = search_result_page.click_search_result(test_data['result_text'])
+        search_result_page.click_search_result(test_data['result_text'])
         # test
-        assert login_page.is_exist(res)
+        assert login_page.is_exist(login_page.email)

@@ -11,7 +11,12 @@ class LoginPage(BasePage):
     def is_exist(self, element):
         return self.check_exist(element)
 
-    def type_email(self, text):
+    def email(self):
+        return self.wait_for_element(
+            By.NAME, 'email'
+        )
+
+    def send_email(self, text):
         return self.wait_for_element(
             By.NAME, 'email'
         ).send_keys(text)
